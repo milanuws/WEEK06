@@ -29,20 +29,20 @@
         // let colour = "Red";
         // document.write("Colour: " + colour + "<br>");
 
-        let colours = [
-            "Red", "Blue", "Yellow"
-        ];
-        document.write("Colours: " + colours + "<br>");
+        // let colours = [
+        //     "Red", "Blue", "Yellow"
+        // ];
+        // document.write("Colours: " + colours + "<br>");
 
         // document.write("Colour 1: " + colours[0] + "<br>");
         // document.write("Colour 2: " + colours[1] + "<br>");
         // document.write("Colour 3: " + colours[2] + "<br>");
 
-        for (let i = 1; i <= colours.length; i++) {
-            document.write("Color " + i + ":" + colours[i-1] + "<br>");
-        }
+        // for (let i = 1; i <= colours.length; i++) {
+        //     document.write("Color " + i + ":" + colours[i-1] + "<br>");
+        // }
 
-        let student = [
+        let students = [
             {
                 "firstname": "Clark",
                 "lastname": "Kent",
@@ -59,6 +59,10 @@
                 "bannerId": "B9253260",
             },
         ]
+
+        for (let i = 1; i <= students.length; i++) {
+            document.write(students[i-1].firstname + " " + students[i-1].lastname + " " + students[i-1].bannerId + "<br>");
+        }
     </script>
 </body>
 
