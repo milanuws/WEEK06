@@ -1,0 +1,8 @@
+create a movie search app,
+
+require,
+
+movie name input field,
+submit button,
+
+and with the movie api.. Show the movie image or thumbnail.
