@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            // document.write("students.json has been received!");
+            let content = this.responseText;
+            console.log(content);
+        
+            let students = JSON.parse(content);
+            console.log(students);
+        
+            for (let i = 1; i <= students.length; i++) {
+            document.write(students[i-1].firstname + " " + students[i-1].lastname + " " + students[i-1].bannerId + "<br>");
+        }
+        }
+        
+      };
+      xhttp.open("get", "https://organic-train-g4vxv49qr6wxcwvgj-5500.app.github.dev/students.json", true);
+      xhttp.send();
+    </script>
+  </body>
+</html>
